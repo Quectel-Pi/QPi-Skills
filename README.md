@@ -1,6 +1,6 @@
 <div align="center">
 
-# open-skill
+# QPi-Skills
 
 **A skill pack for everyday engineering workflows**
 
@@ -245,15 +245,15 @@ define scope + mirror pairs ─► mechanical scan (structure / links / code blo
 
 ```bash
 # 1. Clone, then copy the skill folders you need into your agent's skill directory
-git clone git@github.com:jjking619/open-skill.git
-cp -r open-skill/skills/*  <your-agent-skills-dir>/
+git clone git@github.com:jjking619/QPi-Skills.git
+cp -r QPi-Skills/skills/*  <your-agent-skills-dir>/
 
 # 2. Install from the GitHub repo, if your client supports it
-npx skills add jjking619/open-skill
+npx skills add jjking619/QPi-Skills
 
 # 3. Example: Hermes Agent (tap)
-hermes skills tap add jjking619/open-skill
-hermes skills install jjking619/open-skill/skills/project-reproduction
+hermes skills tap add jjking619/QPi-Skills
+hermes skills install jjking619/QPi-Skills/project-reproduction
 ```
 
 - **No dependencies**: each skill is a plain markdown file; commands run at the moment they're needed.
@@ -265,7 +265,7 @@ hermes skills install jjking619/open-skill/skills/project-reproduction
 ## Repository Layout
 
 ```text
-open-skill/
+QPi-Skills/
 ├── README.md                                   # this file: facade and usage
 ├── README.zh.md                                # Chinese edition of this file
 ├── CHANGELOG.md                                # Keep a Changelog; per-skill versions listed here

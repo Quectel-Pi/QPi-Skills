@@ -1,6 +1,6 @@
 <div align="center">
 
-# open-skill
+# QPi-Skills
 
 **面向日常工作流的技能集**
 
@@ -241,15 +241,15 @@ P0 准备 ─► P1 按原文逐步执行（忠实原文，偏差记为「文档
 
 ```bash
 # 一、克隆后把需要的技能目录复制进你所用 Agent 的技能目录
-git clone git@github.com:jjking619/open-skill.git
-cp -r open-skill/skills/*  <你的技能目录>/
+git clone git@github.com:jjking619/QPi-Skills.git
+cp -r QPi-Skills/skills/*  <你的技能目录>/
 
 # 二、客户端支持从 GitHub 安装时
-npx skills add jjking619/open-skill
+npx skills add jjking619/QPi-Skills
 
 # 三、示例：Hermes Agent（tap 方式）
-hermes skills tap add jjking619/open-skill
-hermes skills install jjking619/open-skill/skills/project-reproduction
+hermes skills tap add jjking619/QPi-Skills
+hermes skills install jjking619/QPi-Skills/project-reproduction
 ```
 
 - **无需安装依赖**：技能是纯 Markdown，命令按需在运行时执行。
@@ -261,7 +261,7 @@ hermes skills install jjking619/open-skill/skills/project-reproduction
 ## 仓库结构（Repository Layout）
 
 ```text
-open-skill/
+QPi-Skills/
 ├── README.md                                   # 英文门面（Agent 与 GitHub 首屏）
 ├── README.zh.md                                # 本文件：中文版
 ├── CHANGELOG.md                                # 变更记录（Keep a Changelog 格式，含各技能版本）
