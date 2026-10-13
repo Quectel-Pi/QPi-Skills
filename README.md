@@ -268,12 +268,9 @@ hermes skills install jjking619/QPi-Skills/project-reproduction
 QPi-Skills/
 ├── README.md                                   # this file: facade and usage
 ├── README.zh.md                                # Chinese edition of this file
-├── CHANGELOG.md                                # Keep a Changelog; per-skill versions listed here
 ├── LICENSE                                     # MIT
 ├── .gitignore
 ├── .gitattributes
-├── tools/
-│   └── check-doc-sync.sh                       # verifies README / published-doc indexes match skills/
 └── skills/                                     # one directory per skill; the directory name equals the SKILL.md `name`
     ├── code-authoring/                         # SKILL.md (English) + SKILL.zh.md (Chinese)
     ├── github-repo-review-and-design/
@@ -299,7 +296,7 @@ The layout follows the Agent Skills tap convention (`skills/<skill-name>/SKILL.m
 - **Fixes are permanent**: a one-off command is not a delivery — the change belongs in a file.
 - **Generic gotchas only**: an entry must hold in someone else's environment; environment- or team-specific items stay out.
 - **No credentials in the repo**: keys, tokens, and internal identifiers come from the environment; the repository holds placeholders.
-- **Semantic versions**: every skill carries a `version`, and notable changes are recorded in [`CHANGELOG.md`](CHANGELOG.md) (Keep a Changelog). After adding or renaming a skill, run `tools/check-doc-sync.sh` so the README and any published document stay in sync.
+- **Semantic versions**: every skill carries a `version` in its frontmatter, mirrored in the table above — bump it when a skill's behavior changes.
 
 <a id="license"></a>
 
